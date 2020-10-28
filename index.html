@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>QFD - Quality Function Deployment</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Renata Oliveira" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/rladies.css" rel="stylesheet" />
+    <link href="libs/remark-css/rladies-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# QFD - Quality Function Deployment
+## Encontro síncrono 11
+### Renata Oliveira
+### 2020/10/26 (updated: 2020-10-28)
+
+---
+
+
+
+
+class: center, middle
+
+# Retrospecto
+
+---
+
+class: inverse, center, middle
+
+# QFD em inovação!!!!
+
+---
+
+# QFD
+
+#### Objetivo: traduzir para termos técnicos a demanda do cliente
+QFD é uma ferramenta de tradução da voz do cliente em expressões técnicas para engenharia desenvolver processos
+
+.pull-left[
+### Empresa tradicional
+- Entregar o que o cliente precisa   
+- Empresa define o que deve ser feito   
+- 80% satisfação  
+]
+
+.pull-right[
+### QFD
+- pesquisa de mercado   
+- desdobramento em departamentos   
+- 90/95% de satisfação   
+]
+
+---
+
+&lt;img src="img/1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+
+&lt;img src="img/2.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# A casa da qualidade - House of Quality
+
+Esquerdo - voz do cliente   
+Superior - tradução - especificações técnicas   
+Direita - avaliação competitiva - benchmarking   
+Inferior - Quanto - para cada especificação do projeto  
+
+&lt;img src="img/24.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Matrizes
+
+&lt;img src="img/19.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+1. Matriz do planejamento do produto - características e desdobramentos   
+2. Matriz de componentes críticos para execução   
+3. Planejamento dos processos, relacionando-os às características principais dos produtos e dos componentes   
+4. Planejamento da fabricação - parâmetros para controle de produtos e processos.    
+
+
+---
+
+# Estrutura de desdobramento da função da qualidade nas 4 matrizes
+
+Para cada matriz, existe o envolvimento de novas áreas da organização
+1. Clientes, marketing e vendas  
+2. Produto   
+3. Engenharia de processo   
+4. Engenharia de manufatura   
+
+#### Olhar sistêmico e alinhamento de diversas áreas das organizações, antecipando problemas na produção ou nas mãos dos clientes
+
+---
+class: inverse, center, middle
+
+# As 4 casas da qualidade do QFD permitem integração entre clientes, P&amp;D&amp;I, desenvolvimento de produto e manufatura.
+
+
+---
+
+# Conceitos gerais...
+
+- Escala Likert na avaliação competitiva   
+- Dificuldades organizacionais: limitações e processos sem investimento em capacidade      
+- Correlação: relações entre as expressões técnicas   
+- Avaliação competitiva: comparação com concorrentes   
+- Importância absoluta e relativa: grau de importância.   
+
+---
+# Exemplo: cliente no supermercado
+
+Matriz 1 - Planejamento: Desejos e necessidades dos clientes
+
+Matriz 2 - Componentes: corredores, setores e gôndolas
+
+Matriz 3 - Planejamento de processo: abastecimento, manuseio de mercadorias
+
+Matriz 4 - Planejamento da produção: detalhar fluxo de processos e observar o que controlar em relação ao processo (parâmetros) e produtos (características) gerenciamento por processos. 
+
+---
+class: inverse, center, middle
+
+# Dúvidas?
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
